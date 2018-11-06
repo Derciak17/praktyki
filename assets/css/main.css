@@ -1,0 +1,163 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  display: relative;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #24375F;
+  width: 100%;
+  height: auto;
+  padding: 2em;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  min-height: 200px;
+  padding-bottom: calc(100px + 2em);
+}
+
+.footer__bottom {
+  background: #162B3C;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  width: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.column__content__lorem {
+  line-height: 2;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1C9BA1;
+  font-size: 23px;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+a {
+  color: #12818a;
+  text-decoration: none;
+}
+
+.post:last-child {
+    padding-top: 2em;
+}
+
+.post {
+    display: -webkit-inline-box;
+}
+
+.post__data {
+  line-height: 2;
+  margin-left: 1em;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.links {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 3;
+}
+
+.link {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 1em;
+}
+
+.social {
+  padding-top: 3em;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: -webkit-inline-box;
+  color: #FFF;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.twitter {
+  background-color: #42A3E8;
+}
+
+.facebook {
+  background-color: #3d5c95;
+}
+
+.googleplus {
+  background-color: #dc4e44;
+}
+
+.dribbble {
+  background-color: #E3417D;
+}
+
+.icon__box {
+  text-align: center;
+  width: 100%;
+  margin-top: 25%;
+}
+
+.search {
+  position: relative;
+}
+
+.search .ti-search {
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  cursor: pointer;
+  top: 32%;
+  padding-right: 1em;
+}
+
+.right__addon .ti-search { right: 0px;}
