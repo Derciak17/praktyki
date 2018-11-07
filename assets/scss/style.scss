@@ -1,0 +1,245 @@
+//   --      Variables      --
+
+
+
+$site--background: #FFF;
+$font-text: 'Open Sans', sans-serif;
+$font-title: 'Roboto Condensed', sans-serif;
+$white: #FFF;
+$footer-background: #24375F;
+$footer-background-bottom: #162B3C;
+$footer-text: #FFF;
+$a: #12818a;
+$twitter--color: #42A3E8;
+$facebook--color: #3d5c95;
+$googleplus--color: #dc4e44;
+$dribbble--color: #E3417D;
+
+
+
+//
+//   --     Global     --
+//
+
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+	display: relative;
+	width: 100%;
+	height: 100%;
+	background: $site--background;
+}
+
+
+
+//
+//   --     Footer main     --
+//
+
+
+
+footer {
+	background-color: $footer-background;
+	width: 100%;
+	height: auto;
+	padding: 2em;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	min-height: 200px;
+	padding-bottom: calc(100px + 2em);
+}
+
+.footer__bottom {
+	background: $footer-background-bottom;
+	bottom: 0;
+	height: auto;
+	position: absolute;
+	width: 100%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 22%;
+	padding: 20px;
+	h3 {
+		font-family: $font-title;
+	    color: #1C9BA1;
+	    font-size: 23px;
+	}
+	&__content {
+		&--text {
+			line-height: 2;
+			color: $white;
+			font-family: $font-text;
+			font-weight: 500;
+			font-size: 13px;
+		}
+	}
+}
+
+
+
+//
+//   --     Font tags formats     --
+//
+
+
+
+h3 {
+	font-family: $font-title;
+	color: $footer-text;
+	font-size: 23px;
+}
+
+h5 {
+	font-family: $font-text;
+	color: $white;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+a {
+	color: #12818a;
+	text-decoration: none;
+}
+
+
+
+//
+//   --     Images     --
+//
+
+
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+
+
+//
+//   --     Header Social icons     --
+//
+
+
+
+.social {
+     padding-top: 3em;
+     &__icons {
+         display: inline-block;
+         &--twitter {
+             background-color: $twitter--color;
+        }
+         &--facebook {
+             background-color: $facebook--color;
+        }
+         &--googleplus {
+             background-color: $googleplus--color;
+        }
+         &--dribbble {
+             background-color: $dribbble--color;
+        }
+    }
+     &__box {
+         width: 50px;
+         height: 50px;
+         display: -webkit-inline-box;
+         color: $white;
+         font-size: 30px;
+         cursor: pointer;
+         &__icon {
+             text-align: center;
+             width: 100%;
+             margin-top: 25%;
+        }
+    }
+}
+
+
+
+
+//
+//   --     Inputs     --
+//
+
+
+
+.search {
+  position: relative;
+  input {
+	  width: 100%;
+	  padding: 1em;
+  }
+  .ti-search {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    cursor: pointer;
+    top: 32%;
+    padding-right: 1em;
+  }
+  &right__addon {
+	  right: 0;
+  }
+}
+
+
+
+//
+//   --     Other stuff     --
+//
+
+
+.links {
+	color: $white;
+	font-family: $font-text;
+	font-size: 16px;
+	line-height: 3;
+	&__link {
+		cursor: pointer;
+	}
+}
+
+.post {
+	display: -webkit-inline-box;
+	padding: 1em;
+	&:last-child {
+		padding-top: 2em;
+	}
+	&__data {
+		line-height: 2;
+		margin-left: 1em;
+		color: #FFF;
+		font-family: $font-title;
+		font-size: 16px;
+	}
+}
+
+
+
+//
+//   --     Responsive settings     --
+//
+
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
